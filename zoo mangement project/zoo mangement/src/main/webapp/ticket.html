@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zoo Management System - Ticket Generation</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-image: url('https://images4.alphacoders.com/871/thumb-1920-871898.jpg');
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    form {
+        width: 50%;
+        margin: 40px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+        color: white;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    label {
+        color: white;
+        display: block;
+        margin-bottom: 5px;
+    }
+    input[type="text"],
+    input[type="number"],
+    input[type="tel"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: none;
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.1);
+        color: white;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: lightblue;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+        display: block;
+        transition: background-color 0.3s ease;
+    }
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+    footer {
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+
+    <form action="insertData" method="post">
+        <h2>Zoo Management System - Ticket Generation</h2>
+        
+        <label for="id">ID:</label>
+        <input type="text" id="id" name="id" required>
+        
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required>
+        
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+        
+        <label for="day">Day of Visit:</label>
+        <input type="text" id="day" name="day" required>
+        
+        <label for="slot">slot:</label>
+        <input type="text" id="slot" name="slot" required>
+        
+        <label for="fee">fee:</label>
+        <input type="text" id="fee" name="fee" required>
+        
+        <input type="submit" value="Generate Ticket">
+    </form>
+
+    <footer>
+        <p>&copy; 2024 Zoo Management System</p>
+    </footer>
+
+
+</body>
+</html>

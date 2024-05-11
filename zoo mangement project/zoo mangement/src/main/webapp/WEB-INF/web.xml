@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" version="6.0">
+  <display-name>zoo mangement</display-name>
+  <servlet>
+    <servlet-name>insertData</servlet-name>
+    <servlet-class>harsha.insertData</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>insertData</servlet-name>
+    <url-pattern>/insertData</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ListData</servlet-name>
+    <servlet-class>harsha.ListData</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListData</servlet-name>
+    <url-pattern>/ListData</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ControllerServlet</servlet-name>
+    <servlet-class>ControllerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ControllerServlet</servlet-name>
+    <url-pattern>/ControllerServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>DispData</servlet-name>
+    <servlet-class>harsha.DispData</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DispData</servlet-name>
+    <url-pattern>/DispData</url-pattern>
+  </servlet-mapping>
+</web-app>

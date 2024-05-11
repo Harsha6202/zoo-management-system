@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zoo Management System</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh; /* This ensures that the content takes at least the height of the viewport */
+    }
+
+    #header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    #content {
+      flex: 1; /* This makes the content area grow to fill the remaining space */
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .animal-container {
+      width: calc(50% - 20px);
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .animal-image {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    #footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: auto; /* Push the footer to the bottom */
+    }
+
+    #footer p {
+      margin: 0;
+    }
+
+    form {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input[type="submit"] {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div id="header">
+    <h1>Zoo Management System</h1>
+  </div>
+
+  <nav>
+    <form action="ListData" method="get"> <!-- Change method to GET -->
+  <input type="submit" value="List"/>  
+</form> 
+  </nav>
+
+  <div id="content">
+    <!-- Animal data will be displayed here -->
+  </div>
+
+  <div id="footer">
+    <p>&copy; 2023 Zoo Management System</p>
+  </div>
+</body>
+</html>

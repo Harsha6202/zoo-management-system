@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Search Book</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    background-image: url("https://previews.123rf.com/images/lildan1337/lildan13372301/lildan1337230104065/196845597-child-on-the-magic-book-boy-standing-on-the-opened-book-and-looking-at-other-books-floating-in-the.jpg");
+    background-size: cover;
+  }
+
+  form {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+  }
+
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #3AFFFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #111;
+  }
+</style>
+</head>
+<body>
+<form action="DispData" action="get"> 
+  <label for="id">Enter your ticket ID:</label><br/> 
+  <input type="text" id="id" name="id"/><br/> 
+  <input type="submit" value="Search"/> 
+</form> 
+</body>
+</html>
